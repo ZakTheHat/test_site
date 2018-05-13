@@ -1,0 +1,36 @@
+*,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: $grey-0;
+	font-family: "Helvetica Regular", "Helvetica", "Segoe UI", "Arial";
+}
+
+.area {
+	
+	@media (max-width: 500px) {
+		margin-left: 10px;
+		&.fluid {
+			margin-right: 10px;
+		}
+	}
+	
+	@media (min-width: 500px) {
+		margin-left: 50px;
+		&.fluid {
+			margin-right: 50px;
+		}
+	}
+	
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}

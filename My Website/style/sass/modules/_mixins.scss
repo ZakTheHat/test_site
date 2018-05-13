@@ -1,0 +1,40 @@
+@mixin button_color ($bg, $fg:#fff) {
+	background: $bg;
+	color: $fg;
+	border: 1px solid darken($bg, 20%);
+	
+	&:active {
+		border: 1px solid darken($bg, 10%);
+	}
+	
+	&:hover {
+		background: darken($bg, 17%);
+	}
+	
+	&.invert {
+		background: $fg;
+		color: $bg;
+		border: 1px solid $fg;
+		
+		&:active {
+			border: 1px solid darken($fg , 10%);
+		}
+		
+		&:hover {
+			background: darken($fg, 4%);
+			border: 1px solid darken($fg, 4%);
+		}
+	}
+}
+
+@mixin alert_color ($fg, $bg: #fff) {
+	color: $fg;
+	background: $bg;
+	border: 1px solid darken($fg, 8%);
+	
+	&.invert {
+		color: $bg;
+		background: $fg;
+		border: 0;
+	}
+}

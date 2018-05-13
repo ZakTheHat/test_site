@@ -1,0 +1,20 @@
+.grid {
+	display: grid;
+	@for $i from 1 through $grid-elements-1 {
+		.col-#{$i}-#{$grid-elements-1} {
+			width: ($grid-elements-1 / $i);
+		}
+	}
+
+	@for $i from 1 through $grid-elements-2 {
+		.col-#{$i}-#{$grid-elements-2} {
+			
+		}
+	}
+
+	@for $i from 1 through $grid-elements-3 {
+		.col-#{$i}-#{$grid-elements-3} {
+			
+		}
+	}
+}
